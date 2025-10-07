@@ -17,30 +17,42 @@ const Login = () => {
             height={63}
           />
           <h2 className={styles.h2}>Login to MediTrack</h2>
+          <span className={styles.span}>
+            Securely access your medical institution MediTrack account
+          </span>
           <form className={styles.form}>
+            <label className={styles.label} htmlFor="email">
+              Email Address
+            </label>
             <input
               className={styles.input}
               type="email"
               placeholder="Email Address"
               required
             />
+            <label className={styles.label} htmlFor="password">
+              Password
+            </label>
             <input
               className={styles.input}
               type="password"
               placeholder="Password"
               required
             />
-            <button className={styles.button} type="submit">
-              Login
-            </button>
             <div className={styles.links}>
-              <Link className={styles.a} href="/forgot-password">
+              <Link className={styles.account} href="/forgot-password">
+                Unable to access account?
+              </Link>
+              <Link className={styles.forgotPassword} href="/register">
                 Forgot Password?
               </Link>
-              <Link className={styles.a} href="/register">
-                Create Account
-              </Link>
             </div>
+            <button className={styles.button} type="submit">
+              Log In
+            </button>           
+              <span className={styles.newToMediTrack}>
+                New to MediTrack?<Link className={styles.request} href="/request"> Request Demo</Link>
+              </span>
           </form>
         </div>
       </div>

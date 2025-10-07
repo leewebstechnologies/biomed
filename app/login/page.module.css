@@ -20,7 +20,7 @@
 .formBox {
   width: 100%;
   max-width: 360px;
-  text-align: center;
+  text-align: left;
 }
 
 .logo {
@@ -33,20 +33,33 @@
   color: #333;
 }
 
+.span {
+  color: #777;
+}
 .form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+.label {
+  margin-top: 15px;
+}
+
 .input {
+  width: 360px;
+  height: 45px;
   padding: 0.75rem 1rem;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 15px;
+  background-color: #eee;
+  color: #ababab;
 }
 
 .button {
+  width: 360px;
+  height: 45px;
   padding: 0.75rem 1rem;
   background: #0190b0;
   color: #fff;
@@ -71,6 +84,30 @@
   color: #0190b0;
   text-decoration: none;
   font-size: 14px;
+}
+
+.links .account {
+  color: #121212;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.links .forgotPassword {
+  color: #0190b0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.newToMediTrack {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #121212;
+}
+
+.request {
+  color: #1A95B9;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
