@@ -15,23 +15,34 @@ const ForgotPassword = () => {
             height={63}
           />
           <h2 className={styles.h2}>Forgot Password</h2>
-          <p className={styles.desc}>
-            Enter your registered email to reset your password.
-          </p>
+          <span className={styles.span}>
+            Request a password reset to access your dashboard
+          </span>
           <form className={styles.form}>
+            <label className={styles.label} htmlFor="email">
+              Email Address
+            </label>
             <input
               className={styles.input}
               type="email"
               placeholder="Email Address"
               required
             />
+            <div className={styles.links}>
+              <span className={styles.rememberPassword}>
+                I remember my password!
+              </span>
+              <Link className={styles.forgotPassword} href="/register">
+                Log In
+              </Link>
+            </div>
             <button className={styles.button} type="submit">
-              Reset Password
+              Request Passsword Reset
             </button>
+            <span className={styles.newToMediTrack}>
+              New to MediTrack? <Link className={styles.request} href="/request">Request Demo</Link>
+            </span>
           </form>
-          <Link href="/login" className={styles.backLink}>
-            Back to Login
-          </Link>
         </div>
       </div>
     </div>
