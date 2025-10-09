@@ -1,7 +1,7 @@
 // import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "../components/header/Header";
-import MainContent from "../components/mainContent/MainContent";
+import Main from "../components/main/Main";
 import Sidebar from "../components/sidebar/Sidebar";
 
 const Dashboard = () => {
@@ -11,7 +11,7 @@ const Dashboard = () => {
         <Header  />
         <div className={styles.sidebarAndContent}>
           <Sidebar />
-          <MainContent />
+          <Main />
         </div>
       </div>
     </>

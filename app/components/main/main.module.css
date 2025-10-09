@@ -1,0 +1,10 @@
+.main {
+  margin-left: 249px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stockValue {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a95b9;
+}
