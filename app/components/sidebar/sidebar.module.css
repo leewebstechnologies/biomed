@@ -1,0 +1,159 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  margin-top: 32px;
+}
+
+.nav {
+  margin-top: 32px;
+}
+
+.nav .ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 32px;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: #007b9e;
+  font-size: 15px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav li:hover {
+  background-color: #007b9e;
+  color: #fff;
+}
+
+.nav li i {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+}
+
+.nav li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.active {
+  /* background-color: #007b9e; */
+  color: #fff;
+}
+
+.supportCard {
+  background: #e8f4f8;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 31px;
+  text-align: center;
+}
+
+.helpTitle {
+  font-weight: 600;
+  color: #007b9e;
+  margin-bottom: 5px;
+}
+
+.helpText {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.supportBtn {
+  background: #007b9e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.supportBtn:hover {
+  background: #005f7a;
+}
+
+.viewProfile {
+  display: flex;
+  margin-bottom: 23px;
+  background-color: #e8f4f8;
+  padding: 8px 15px 7px 9px;
+  border-radius: 10px;
+}
+
+.hospitalIcon {
+  margin-right: 9px;
+}
+
+.hospitalName {
+  font-size: 9px;
+  color: #1a95b9;
+  font-weight: 600;
+  margin: 0;
+}
+
+.profileLink {
+  font-size: 12px;
+  color: #007b9e;
+  text-decoration: none;
+}
+
+/* .profileLink:hover {
+  text-decoration: underline;
+} */
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 220px;
+    padding: 15px 10px;
+  }
+
+  .nav li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    width: 200px;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 90px;
+  }
+
+  .nav li {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+}
