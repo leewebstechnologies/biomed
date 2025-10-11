@@ -1,6 +1,78 @@
 .main {
+  display: flex;
+  flex-direction: column;
   margin-left: 249px;
+  transition: margin-left 0.3s ease;
+}
+
+.welcome {
+  margin-left: 49px;
+  margin-top: 41px;
+}
+
+.h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.h3 span {
+  color: #1a95b9;
+}
+
+.subTitle {
+  color: #777;
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+/* --- Stock Cards --- */
+.stock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 49px 0 49px;
+}
+
+.stockCard {
+  flex: 1 1 calc(25% - 20px);
+  min-width: 220px;
+  border: 1px solid #eee;
+  border-radius: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 16px 18px 20px 15px;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stockCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.stockCardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stockTitle {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.stockIcon {
+  padding: 13px;
+  background-color: #e8f4f8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stockCardBottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
 }
 
 .stockValue {
@@ -8,3 +80,211 @@
   font-weight: 600;
   color: #1a95b9;
 }
+
+.stockReport {
+  color: #777;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.span {
+  color: #1a95b9;
+  font-weight: 600;
+}
+
+/* --- Card Top Section --- */
+.cardTop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 27px 49px 0 49px;
+}
+
+.cardLeft,
+.cardRight,
+.cardBottom {
+  border: 1px solid #eee;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+.cardLeft {
+  flex: 1 1 60%;
+  min-height: 207px;
+}
+
+.cardRight {
+  flex: 1 1 35%;
+  min-height: 207px;
+}
+
+.cardBottom {
+  margin: 27px 49px 34px 49px;
+  min-height: 207px;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 1200px) {
+  .main {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+
+  .welcome {
+    margin-left: 0;
+  }
+
+  .stock {
+    margin: 30px 0 0 0;
+    justify-content: center;
+  }
+
+  .cardTop {
+    margin: 27px 0 0 0;
+  }
+
+  .cardBottom {
+    margin: 27px 0 34px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .stockCard {
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  .cardLeft,
+  .cardRight {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .h3 {
+    font-size: 16px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+  }
+
+  .stockCard {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+
+  .stockValue {
+    font-size: 20px;
+  }
+
+  .cardBottom {
+    width: 100%;
+  }
+}
+
+
+/* .main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 249px;
+}
+
+.welcome {
+  margin-left: 49px;
+  margin-top: 41px;
+}
+
+.h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.h3 span {
+  color: #1a95b9;
+}
+
+.subTitle {
+  color: #777;
+}
+
+.stock {
+  display: flex;
+  margin-top: 30px;
+}
+
+.stockCard {
+  width: 210px;
+  height: 150px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 16px 18px 20px 15px;
+  margin-left: 49px;
+}
+
+.stockCardTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stockTitle {
+  font-weight: 500;
+}
+
+.stockIcon {
+  padding: 13px;
+  background-color: #e8f4f8;
+  border-radius: 10px;
+}
+
+.stockCardBottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.stockValue {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a95b9;
+}
+
+.cardTop {
+  display: flex;
+}
+
+.cardLeft {
+  width: 579px;
+  height: 207px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-left: 49px;
+  margin-top: 27px;
+}
+
+.cardRight {
+  width: 327px;
+  height: 207px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-left: 49px;
+  margin-top: 27px;
+}
+
+.cardBottom {
+  width: 942px;
+  height: 207px;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-left: 49px;
+  margin-top: 27px;
+  margin-bottom: 34px;
+} */
