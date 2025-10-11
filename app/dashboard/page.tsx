@@ -9,7 +9,7 @@ const Dashboard = () => {
     <>
       <div className={styles.page}>
         <Header  />
-        <div className={styles.sidebarAndContent}>
+        <div className={styles.sidebarAndMain}>
           <Sidebar />
           <Main />
         </div>

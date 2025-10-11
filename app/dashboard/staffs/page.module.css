@@ -1,0 +1,19 @@
+.staffsContent {
+  display: flex;
+}
+
+.welcome {
+  margin-left: 299px;
+  margin-top: 41px;
+}
+
+.h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.subTitle {
+  color: #777;
+  margin-top: 6px;
+  font-size: 15px;
+}

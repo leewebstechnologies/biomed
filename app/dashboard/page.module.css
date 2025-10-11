@@ -1,3 +1,6 @@
-.sidebarAndContent {
-  display: flex;
+@media (max-width: 768px) {
+  .sidebarAndMain {
+    display: flex;
+    flex-direction: column;
+  }
 }

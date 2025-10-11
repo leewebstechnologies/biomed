@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       {/* Logo */}
-      <Link href="/" className={styles.headerLeft}>
+      <Link href="/dashboard/" className={styles.headerLeft}>
         <Image className={styles.logo} src="/images/logo.png" alt="Tido Logo" width={120} height={50} />
       </Link>
 

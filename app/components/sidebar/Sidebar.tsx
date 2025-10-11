@@ -10,23 +10,23 @@ const Sidebar = () => {
         <ul className={styles.ul}>
           <li className={styles.active}>
             <i className="fa-solid fa-chart-line"></i>
-            <Link href="#">Analysis</Link>
+            <Link href="/dashboard/analysis">Analysis</Link>
           </li>
           <li className={styles.li}>
             <i className="fa-regular fa-file-lines"></i>
-            <Link href="#">Reports</Link>
+            <Link href="/dashboard/reports">Reports</Link>
           </li>
           <li className={styles.li}>
             <i className="fa-solid fa-boxes-stacked"></i>
-            <Link href="#">Inventory</Link>
+            <Link href="/dashboard/inventory">Inventory</Link>
           </li>
           <li className={styles.li}>
             <i className="fa-solid fa-clock-rotate-left"></i>
-            <Link href="#">Supply History</Link>
+            <Link href="/dashboard/history">Supply History</Link>
           </li>
           <li className={styles.li}>
             <i className="fa-regular fa-user"></i>
-            <Link href="#">Staffs</Link>
+            <Link href="/dashboard/staffs">Staffs</Link>
           </li>
         </ul>
       </nav>
@@ -48,7 +48,7 @@ const Sidebar = () => {
         />
         <div className="viewProfileContent">
           <p className={styles.hospitalName}>LAGOS STATE TEACHING HOSPITAL</p>
-          <Link href="#" className={styles.profileLink}>
+          <Link href="/profile" className={styles.profileLink}>
             Click to view profile
           </Link>
         </div>
