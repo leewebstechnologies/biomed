@@ -49,14 +49,18 @@ const Login = () => {
             </div>
             <button className={styles.button} type="submit">
               Log In
-            </button>           
-              <span className={styles.newToMediTrack}>
-                New to MediTrack?<Link className={styles.request} href="/request"> Request Demo</Link>
-              </span>
+            </button>
+            <span className={styles.newToMediTrack}>
+              New to MediTrack?
+              <Link className={styles.request} href="/request">
+                {" "}
+                Request Demo
+              </Link>
+            </span>
           </form>
         </div>
       </div>
     </div>
   );
-}
-export default Login
+};
+export default Login;
