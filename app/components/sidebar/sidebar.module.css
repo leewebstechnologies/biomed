@@ -128,9 +128,16 @@
   text-decoration: none;
 }
 
-/* .profileLink:hover {
-  text-decoration: underline;
-} */
+.li.active,
+.nav li.active {
+  background-color: #007b9e;
+  color: #fff;
+}
+
+.li.active i {
+  color: #fff;
+}
+
 
 @media (max-width: 992px) {
   .sidebar {
