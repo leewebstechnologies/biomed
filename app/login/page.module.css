@@ -78,6 +78,8 @@
   background-color: #f7f7f7;
   color: #333;
   transition: border 0.3s, background-color 0.3s;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
 }
 
 .input:focus {
@@ -97,6 +99,8 @@
   cursor: pointer;
   transition: background 0.3s;
   margin-top: 0.5rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
 }
 
 .button:hover {
@@ -116,12 +120,16 @@
   color: #121212;
   text-decoration: none;
   font-size: 0.9rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
 }
 
 .forgotPassword {
   color: #0190b0;
   text-decoration: none;
   font-size: 0.9rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
 }
 
 .newToMediTrack {
@@ -130,11 +138,14 @@
   text-align: center;
   color: #121212;
   margin-top: 1rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
 }
 
 .request {
   color: #0190b0;
   text-decoration: none;
+  font-family: Poppins, sans-serif;
   font-weight: 500;
 }
 

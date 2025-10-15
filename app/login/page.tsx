@@ -30,7 +30,7 @@ const Login = () => {
               placeholder="Email Address"
               required
             />
-            <label className={styles.label} htmlFor="password">
+            <label className={styles.label} htmlFor="email">
               Password
             </label>
             <input

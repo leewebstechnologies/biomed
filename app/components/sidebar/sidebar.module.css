@@ -37,6 +37,8 @@
   margin-bottom: 8px;
   transition: all 0.3s ease;
   cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
 }
 
 .nav li:hover {
@@ -72,12 +74,16 @@
   font-weight: 600;
   color: #007b9e;
   margin-bottom: 5px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
 }
 
 .helpText {
   font-size: 13px;
   color: #555;
   margin-bottom: 10px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
 }
 
 .supportBtn {
@@ -89,6 +95,8 @@
   font-size: 13px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
 }
 
 .supportBtn:hover {

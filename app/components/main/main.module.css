@@ -12,6 +12,7 @@
 
 .h3 {
   font-size: 18px;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
 }
 
@@ -23,6 +24,8 @@
   color: #777;
   margin-top: 6px;
   font-size: 15px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
 }
 
 /* --- Stock Cards --- */
@@ -56,6 +59,7 @@
 }
 
 .stockTitle {
+  font-family: Poppins, sans-serif;
   font-weight: 500;
   font-size: 15px;
 }
@@ -77,6 +81,7 @@
 
 .stockValue {
   font-size: 24px;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
   color: #1a95b9;
 }
@@ -85,11 +90,12 @@
   color: #777;
   font-size: 14px;
   margin-top: 4px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
 }
 
 .span {
   color: #1a95b9;
-  font-weight: 600;
 }
 
 /* --- Card Top Section --- */
@@ -188,7 +194,6 @@
     width: 100%;
   }
 }
-
 
 /* .main {
   display: flex;

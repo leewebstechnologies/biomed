@@ -26,7 +26,7 @@ const Main = () => {
           </div>
           <div className={styles.stockCardBottom}>
             <p className={styles.stockValue}>1,200</p>
-            <p>
+            <p className={styles.stockReport}>
               <span className={styles.span}>+10%</span> Compared to Last week
             </p>
           </div>
@@ -93,17 +93,11 @@ const Main = () => {
         </div>
       </div>
       <div className={styles.cardTop}>
-        <div className={styles.cardLeft}>
-
-        </div>
-        <div className={styles.cardRight}>
-
-        </div>
+        <div className={styles.cardLeft}></div>
+        <div className={styles.cardRight}></div>
       </div>
 
-      <div className={styles.cardBottom}>
-        
-      </div>
+      <div className={styles.cardBottom}></div>
     </div>
   );
 };

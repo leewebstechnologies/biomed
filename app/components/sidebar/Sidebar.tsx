@@ -8,7 +8,7 @@ const Sidebar = () => {
     <aside className={styles.sidebar}>
       <nav className={styles.nav}>
         <ul className={styles.ul}>
-          <li className={styles.active}>
+          <li className={styles.li}>
             <i className="fa-solid fa-chart-line"></i>
             <Link href="/dashboard/analysis">Analysis</Link>
           </li>
